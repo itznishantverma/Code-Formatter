@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Code2, Copy, Wand2, RotateCcw, Check, FileCode, Layers, Sparkles, Eye, Edit, FilePlus, AlertCircle, Menu, X, Sun, Moon, Save, Download, FolderOpen, LogIn, LogOut, User } from 'lucide-react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { formatCode, FormatResult } from './utils/codeFormatter';
 import { parseLogData, ParsedFile } from './utils/logParser';
 import { FileTree } from './components/FileTree';
@@ -836,6 +837,7 @@ function App() {
   return (
     <AuthProvider>
       <AppContent />
+      <SpeedInsights />
     </AuthProvider>
   );
 }
